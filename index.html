@@ -21,12 +21,14 @@
 			<div class="social-buttons">
 				<div class="social-btn">
 					<a href="https://vk.com/grishka_podmishka"></a>
+					<div class="email-box" style="display: none">malgr1009@gmail.com</div>
+					<div class="tele-box" style="display: none">+7(904)838-62-8</div>
 				</div>
-				<div class="social-btn">
-					<a href="mailto:malgr1009@gmail.com"></a>
+				<div class="social-btn" id="gmail-btn">
+					<a href="#"></a>
 				</div>
-				<div class="social-btn">
-					<a href="https://vk.com/grishka_podmishka"></a>
+				<div class="social-btn" id="tele-btn">
+					<a href="#"></a>
 				</div>
 			</div>
 		</div>
@@ -46,7 +48,16 @@
 					<a href="#works">Посмотреть порфтолио</a>
 				</div>
 			</div>
-			<div class="about-right"></div>
+			<div class="about-right">
+				<h3 align="center">Оформить заказ</h3>
+				<form action="#">
+					<label for="email-input">Ваш email</label>
+					<input type="text" id="email-input">
+					<label for="msg-input">Сообщение</label>
+					<textarea name="msg-input" id="msg-input" cols="30" rows="5"></textarea>
+					<button>Отправить</button>
+				</form>
+			</div>
 		</div>
 	</section>
 	<section id="works">

@@ -5,6 +5,12 @@ $(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 800);
     });
+    $("#gmail-btn").click(function() {
+    	$(".email-box").slideToggle(200);
+    });
+    $("#tele-btn").click(function() {
+    	$(".tele-box").slideToggle(200);
+    });
 	$(".works-categories").find(".category").click(function(){
 		var activeCategory = $(".active");
 		$(activeCategory).removeClass("active");

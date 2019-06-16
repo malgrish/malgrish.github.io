@@ -97,7 +97,7 @@ h2{
 	}
 	&:nth-child(3){
 		a{
-			background-image: url(../img/telegram-logo.png);
+			background-image: url(../img/tele.gif);
 			background-size: 115%;
 			border-radius: 50%;
 			background-position: center;
@@ -127,11 +127,42 @@ h2{
 	justify-content: space-between;
 }
 .about-right{
-	background-image: url(../img/statue.png);
+	border: 1px dashed $tcolor;
+	border-radius: 2px;
 	background-size: 50%;
 	background-position: top;
 	background-repeat: no-repeat;
 	width: 40%;
+	padding: 20px;
+}
+.about-right h3{
+	font-size: 19px;
+	margin-bottom: 10px;
+}
+.about-right form input{
+	display: block;
+}
+.about-right form textarea{
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+.about-right form label{
+	display: block;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.about-right form button{
+	display: block;
+	font-size: 16px;
+	color: $tcolor;
+	padding: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#email-input{
+	width: 100%;
+	padding: 5px;
 }
 .action-btn a{
 	display: inline-block;
@@ -195,7 +226,7 @@ h2{
 .portfolio-item{
 	width: 32%;
 	margin-bottom: 2%;
-	height: 200px;
+	height: 220px;
 }
 .landings .portfolio-item{
 	border: 1px solid lighten($tcolor,20%);
@@ -362,7 +393,7 @@ h2{
 }
 .big-picture{
 	width: 100%;
-	height: 210px;
+	height: 260px;
 	border: 1px solid $tcolor;
 	margin-bottom: 10px;
 	background-size: cover;
@@ -481,6 +512,34 @@ h2{
 	height: 100%;
 	z-index: 10;
 }
+.email-box{
+	width: 210px;
+	height: 40px;
+	background-color: white;
+	line-height: 40px;
+	vertical-align: middle;
+	position: absolute;
+	margin-top: 10px;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0,0,0, .3);
+	margin-left: -35px;
+}
+.tele-box{
+	width: 210px;
+	height: 40px;
+	background-color: white;
+	line-height: 40px;
+	vertical-align: middle;
+	position: absolute;
+	margin-top: 10px;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0,0,0, .3);
+	margin-left: -35px;
+}
+
+
 
 
 
@@ -497,6 +556,12 @@ h2{
 	}
 	.modal-box{
 		width: 950px;
+	}
+	.portfolio-item{
+		height: 210px;
+	}
+	.big-picture{
+		height: 240px;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -519,6 +584,9 @@ h2{
 	.portfolio-item:nth-child(5),.portfolio-item:nth-child(6){
 		display: none;
 	}
+	.big-picture{
+		height: 210px;
+	}
 }
 @media only screen and (max-width: 768px){
 	.container{
@@ -533,6 +601,7 @@ h2{
 	.portfolio-item{
 		width: 80%;
 		margin-bottom: 40px;
+		height: 240px;
 	}
 	.about-right{
 		display: none;
@@ -551,6 +620,9 @@ h2{
 	}
 	#about{
 		text-align: center;
+	}
+	.big-picture{
+		height: 240px;
 	}
 }
 @media only screen and (max-width: 576px){
@@ -617,5 +689,8 @@ h2{
 	}
 	.about-left{
 		width: 100%;
+	}
+	.email-box{
+		margin-left: -10px;
 	}
 }
