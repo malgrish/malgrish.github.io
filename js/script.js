@@ -29,6 +29,10 @@ $(function(){
 		$(".modal").fadeOut(300);
 		$("body").css("overflow-y", "auto")
 	});
+	$(".close-area").click(function(){
+		$(".modal").fadeOut(300);
+		$("body").css("overflow-y", "auto")
+	});
 	$(".p-item-overlay #btg-btn").click(function(){
 		$("#modal-btg").fadeIn(300);
 		$("body").css("overflow-y", "hidden")
