@@ -26,7 +26,7 @@ h2{
 	font-weight: 600;
 }
 .container{
-	width: 960px;
+	width: 1140px;
 	margin: 0 auto;
 }
 #header{
@@ -195,9 +195,9 @@ h2{
 .portfolio-item{
 	width: 32%;
 	margin-bottom: 2%;
+	height: 200px;
 }
 .landings .portfolio-item{
-	height: 200px;
 	border: 1px solid lighten($tcolor,20%);
 	transition-duration: .3s;
 	&:nth-child(1){
@@ -308,7 +308,7 @@ h2{
 	overflow-y: scroll;
 }
 .modal-box{
-	width: 960px;
+	width: 1140px;
 	background-color: #fff;
 	position: relative;
 	left: 50%;
