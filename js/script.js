@@ -39,19 +39,19 @@ $(function(){
 		$(".modal").fadeOut(300);
 		$("body").css("overflow-y", "auto")
 	});
-	$(".p-item-overlay #btg-btn").click(function(){
+	$(".p-item-overlay .btg-btn").click(function(){
 		$("#modal-btg").fadeIn(300);
 		$("body").css("overflow-y", "hidden")
 	});
-	$(".p-item-overlay #dbk-btn").click(function(){
+	$(".p-item-overlay .dbk-btn").click(function(){
 		$("#modal-dbk").fadeIn(300);
 		$("body").css("overflow-y", "hidden")
 	});
-	$(".p-item-overlay #vr-btn").click(function(){
+	$(".p-item-overlay .vr-btn").click(function(){
 		$("#modal-vr").fadeIn(300);
 		$("body").css("overflow-y", "hidden")
 	});
-	$(".p-item-overlay #ovk-btn").click(function(){
+	$(".p-item-overlay .ovk-btn").click(function(){
 		$("#modal-ovk").fadeIn(300);
 		$("body").css("overflow-y", "hidden")
 	});
