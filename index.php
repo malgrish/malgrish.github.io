@@ -162,10 +162,10 @@
          обращения</h2>
       <div class="request__line"></div>
       <form class="request__form">
-         <input type="text" name="user_name" class="request__input" placeholder="Введите имя">
-         <input type="text" name="user_phone" class="request__input" placeholder="Введите телефон">
+         <input type="text" name="user_name" class="request__input" placeholder="Введите имя" required>
+         <input type="text" name="user_phone" class="request__input" placeholder="Введите телефон" required>
          <div class="btn-wrapper request__btn--wrapper">
-            <button type="submit" class="btn request__button">Оставить заявку</button>
+            <button type="submit" class="btn request__button popup-open">Оставить заявку</button>
          </div>
       </form>
       <div class="request__confidence">Нажимая на кнопку «Оставить заявку» я даю согласие на обработку<br>персональных
@@ -187,10 +187,7 @@
                      <img src="img/reasons/calendar.png" alt="">
                   </div>
                   <div class="reasons__title">Делаем в срок</div>
-                  <div class="reasons__desc">
-                     Не превращая объект в долгострой,</br>
-                     мы помогаем Вам быстрее запустить</br>
-                     бизнес процессы (без потери прибыли).
+                  <div class="reasons__desc">Не превращая объект в долгострой,<br>мы помогаем Вам быстрее запустить<br>бизнес процессы (без потери прибыли).
                   </div>
                </div>
                <div class="reasons__block wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -199,8 +196,8 @@
                   </div>
                   <div class="reasons__title">Решение комплексных задач</div>
                   <div class="reasons__desc">
-                     Работая с нами Вам не придется</br>
-                     заниматься поиском и контролем</br>
+                     Работая с нами Вам не придется<br>
+                     заниматься поиском и контролем<br>
                      узкоспециализированных подрядчиков.
                   </div>
                </div>
@@ -209,23 +206,14 @@
                      <img src="img/reasons/contract.png" alt="">
                   </div>
                   <div class="reasons__title">Какая смета, такая и цена</div>
-                  <div class="reasons__desc">
-                     Фиксированная стоимость работ</br>
-                     позволяет Вам более тщательно</br>
-                     спланировать финансовую</br>
-                     деятельность Вашей компании.
-                  </div>
+                  <div class="reasons__desc">Фиксированная стоимость работ<br>позволяет Вам более тщательно<br>спланировать финансовую<br>деятельность Вашей компании.</div>
                </div>
                <div class="reasons__block wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
                   <div class="reason__img">
                      <img src="img/reasons/handshake.png" alt="">
                   </div>
                   <div class="reasons__title">Индивидуальный подход<br>к каждому клиенту</div>
-                  <div class="reasons__desc">
-                     Делаем ремонт под ваши задачи,</br>
-                     учитывая все пожелания и нюансы. У нас</br>
-                     есть опыт в создании уникальных решений.
-                  </div>
+                  <div class="reasons__desc">Делаем ремонт под ваши задачи,<br>учитывая все пожелания и нюансы. У нас<br>есть опыт в создании уникальных решений.</div>
                </div>
             </div>
          </div>
@@ -644,7 +632,7 @@
    <section id="calculate">
       <div class="container">
          <div class="calc__left cwrap1">
-            <div class="calc__title">рассчитайте<br>стоимость ремонта</div>
+            <h2 class="calc__title">рассчитайте<br>стоимость ремонта</h2>
             <div class="calc__subtitle">Пройдите небольшой тест и забронируйте скидку на все услуги</div>
             <div class="calc__choose">
                <div class="choose__text">Выберите тип помещения</div>
@@ -654,37 +642,37 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check ofice__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Офисное помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Офисное помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check torg__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Торговое помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Торговое помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check skald__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Складское помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Складское помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check other__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Другие общественные</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Другие общественные</span>
                   </label>
                </div>
             </div>
@@ -745,19 +733,19 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check shtuk__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Штукатурка и окраска</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Штукатурка и окраска</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check naves__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Навесной вентилируемый</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Навесной вентилируемый</span>
                   </label>
                </div>
             </div>
@@ -794,7 +782,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-1">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>5%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>6%</span></div>
             </div>
          </div>
 
@@ -812,7 +800,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-2">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>5%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>8%</span></div>
             </div>
          </div>
 
@@ -827,19 +815,19 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-3-yes__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Да</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Да</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-3-no__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Нет</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Нет</span>
                   </label>
                </div>
             </div>
@@ -847,7 +835,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-3">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>10%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>9%</span></div>
             </div>
          </div>
 
@@ -862,19 +850,19 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-4-yes__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Да</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Да</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-4-no__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Нет</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Нет</span>
                   </label>
                </div>
             </div>
@@ -897,19 +885,19 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-5-yes__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Да</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Да</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-5-no__check">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Нет</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Нет</span>
                   </label>
                </div>
             </div>
@@ -917,7 +905,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-5">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>10%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>11%</span></div>
             </div>
          </div>
 
@@ -935,7 +923,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-6">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>5%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>12%</span></div>
             </div>
          </div>
 
@@ -950,28 +938,28 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-7-pritok">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Приточная</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Приточная</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-7-vityazh">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Вытяжная</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Вытяжная</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-7-kond">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Кондиционирование</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Кондиционирование</span>
                   </label>
                </div>
             </div>
@@ -979,7 +967,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-7">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>10%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>13%</span></div>
             </div>
          </div>
 
@@ -994,37 +982,37 @@
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-8">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Офисное помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Офисное помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-8">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Складское помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Складское помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-8">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Торговое помещение</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Торговое помещение</span>
                   </label>
                </div>
                <div class="calc__option">
                   <label class="option__content">
                      <input type="checkbox" class="option__check vn-8">
-                     <div class="option__fake-check">
-                        <div class="check__img"></div>
-                     </div>
-                     <div class="option__text">Другие общественные</div>
+                     <span class="option__fake-check">
+                        <span class="check__img"></span>
+                     </span>
+                     <span class="option__text">Другие общественные</span>
                   </label>
                </div>
             </div>
@@ -1032,7 +1020,7 @@
                <div class="btn-wrapper calc__btn--wrapper">
                   <a class="btn calc__button vn-btn-8">Рассчитать стоимость</a>
                </div>
-               <div class="calc__discount">Ваша текущая скидка<span>10%</span></div>
+               <div class="calc__discount">Ваша текущая скидка<span>15%</span></div>
             </div>
          </div>
 
@@ -1130,17 +1118,23 @@
          </div>
          <div class="welcome__form__title">Остались вопросы? Мы перезвоним!</div>
          <form class="welcome__form">
-            <input placeholder="Введите имя" name="user_name1" type="text" class="welcome__name">
-            <input placeholder="Введите телефон" name="user_phone1" type="text" class="welcome__tel">
+            <input placeholder="Введите имя" name="user_name1" type="text" class="welcome__name" required>
+            <input placeholder="Введите телефон" name="user_phone1" type="text" class="welcome__tel" required>
             <div class="btn-wrapper welcome__btn--wrapper">
-               <button type="submit" class="btn welcome__btn"><span>Оставить заявку</span></button>
+               <button type="submit" class="btn welcome__btn popup-open"><span>Оставить заявку</span></button>
             </div>
          </form>
          <div class="welcome__confidence">Нажимая на кнопку «Оставить заявку» я даю согласие на
-            обработку<br>персональных данных и соглашаюсь с условиями политики конфиденциальности</div>
+            обработку<br>персональных данных и соглашаюсь с условиями <a href="#">политики конфиденциальности</a></div>
       </div>
    </section>
 
+   <div class="popup-wrap"></div>
+   <div class="popup">
+      <div class="popup__close">
+         <span>&#10006;</span>
+      </div>
+   </div>
 
    <script src="js/jquery.min.js"></script>
    <script src="js/wow.min.js"></script>

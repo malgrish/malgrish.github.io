@@ -284,14 +284,31 @@ let vnItog = document.querySelector('.vn-itog');
 vnBtn8.addEventListener('click', () => {
    cwrapVn8.style.display = 'none';
    cwrapVn9.style.display = 'block';
-   vnData.vnSum = vnData.vnSum + vnData.squareCost;
-   vnData.vnSum = vnData.vnSum + vnData.kond;
-   vnData.vnSum = vnData.vnSum + vnData.vityazh;
-   vnData.vnSum = vnData.vnSum + vnData.pritok;
-   vnData.vnSum = vnData.vnSum + vnData.waterCost;
-   vnData.vnSum = vnData.vnSum + vnData.electro;
-   vnData.vnSum = vnData.vnSum + vnData.designCost;
-   vnData.vnSum = vnData.vnSum + vnData.slab;
+   if(vnData.squareCost > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.squareCost;
+   }
+   if(vnData.kond > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.kond;
+   }
+   if(vnData.vityazh > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.vityazh;
+   }
+   if(vnData.pritok > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.pritok;
+   }
+   if(vnData.electro > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.electro;
+   }
+   if(vnData.designCost > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.designCost;
+   }
+   if(vnData.slab > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.slab;
+   }
+   if(vnData.waterCost > 0) {
+      vnData.vnSum = vnData.vnSum + vnData.waterCost;
+   }
+   vnItog.textContent = `${vnData.vnSum} руб.`
 });
 
 
@@ -373,3 +390,33 @@ fasadSmal3.addEventListener('click', () => {
 });
 
 //END Cases pics
+
+//Popup
+let popupWrap = document.querySelector('.popup-wrap');
+let popup = document.querySelector('.popup');
+let popupBtn = document.querySelectorAll('.popup-open');
+let allForms = [reqForm, footerForm];
+let popupClose = document.querySelector('.popup__close');
+
+popup.style.display = 'none';
+popupWrap.style.display = 'none';
+
+allForms.forEach((item) => {
+   item.addEventListener('submit', () => {
+      popupWrap.style.display = 'block';
+      popup.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+   });
+})
+popupClose.addEventListener('click', () => {
+   popup.style.display = 'none';
+   popupWrap.style.display = 'none';
+   document.body.style.overflow = 'auto';
+});
+popupWrap.addEventListener('click', () => {
+   popup.style.display = 'none';
+   popupWrap.style.display = 'none';
+   document.body.style.overflow = 'auto';
+});
+
+//END Popup
