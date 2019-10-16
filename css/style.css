@@ -2790,6 +2790,9 @@ body {
   .support__text--semibold {
     font-size: 14px;
   }
+  .support__title--red {
+    font-size: 16px;
+  }
   .volonteer__left {
     font-size: 23px;
   }
