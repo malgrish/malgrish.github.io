@@ -1,24 +1,54 @@
-let helpBlockDesc = document.querySelectorAll('.help__block__desc');
-helpBlockDesc.forEach((item) => {
-   if(item.textContent.length > 144) {
-      item.textContent = item.textContent.slice(0, 144) + '...';
-   }
-});
+function toCutText(elem, len) {
+   elem.forEach((item) => {
+      if (item.textContent.length > len) {
+         item.textContent = item.textContent.slice(0, len) + '...';
+      }
+   });
+}
 
-let newsBlockDesc = document.querySelectorAll('.news__block__desc');
-newsBlockDesc.forEach((item) => {
-   if(item.textContent.length > 241) {
-      item.textContent = item.textContent.slice(0, 241) + '...';
-   }
-});
+let helpBlockDesc = document.querySelectorAll('.help-block__desc');
 
-let teamBlockDesc = document.querySelectorAll('.team__block__desc');
-teamBlockDesc.forEach((item) => {
-   if(item.textContent.length > 110) {
-      item.textContent = item.textContent.slice(0, 110) + '...';
-   }
-});
+let newsBlockDesc = document.querySelectorAll('.news-block__desc');
 
-$('.nav__burger').click(function() {
+let teamBlockDesc = document.querySelectorAll('.team-block__desc');
+
+
+
+
+toCutText(helpBlockDesc, 144);
+toCutText(newsBlockDesc, 241);
+toCutText(teamBlockDesc, 110);
+
+
+$('.nav__burger').click(function () {
    $('.responsive__menu').slideToggle(200);
+});
+
+$('.nav__elem > a').each(function () {
+   if ($(this).attr('href') == window.location.href.split('/').pop()) {
+      $(this).addClass('nav__elem--active');
+   }
+});
+
+let paginationElems = document.querySelectorAll('.pagination__elem');
+
+paginationElems.forEach((item) => {
+   item.addEventListener('click', () => {
+      let paginationElemActive = document.querySelector('.pagination__elem--active');
+      paginationElemActive.classList.remove('pagination__elem--active');
+      item.classList.add('pagination__elem--active');
+   });
+});
+
+let navHiddenElems = document.querySelectorAll('.nav-elem__hidden');
+navHiddenElems.forEach((item) => {
+   item.style.display = 'none';
+});
+
+let navElems = document.querySelectorAll('.nav__elem');
+navElems.forEach((item) => {
+   item.addEventListener('click', () => {
+      let navHiddenMenu = item.querySelector('.nav-elem__hidden');
+      navHiddenMenu.style.display = 'block';
+   });
 });
